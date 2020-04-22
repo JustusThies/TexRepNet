@@ -15,8 +15,8 @@ In the figure below you see the training curve for a scan with 89 images (from l
 ## Inference
 
 Inference is done on a vertex level. You can increase the sample rate via subdivision.
-<img src="snapshots/snapshot00_L00.jpg" alt="Matterport1" width="512"/>
-<img src="snapshots/snapshot01_L00.jpg" alt="Matterport2" width="512"/>
+<img src="snapshots/snapshot00_L00.jpg" alt="Matterport1" width="400"/>
+<img src="snapshots/snapshot01_L00.jpg" alt="Matterport2" width="400"/>
 
 ## Ackowledgements
 This code is based on the Pix2Pix/CycleGAN framework [(Github repo)](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and the NeuralTexGen project [(Github repo)](https://github.com/JustusThies/NeuralTexGen).
