@@ -6,6 +6,19 @@ As input you have to provide position-maps of the target scene along with the co
 The 'color function' is a per position MLP.
 We use the positional encoding proposed by NeRF [(Arxiv)](https://arxiv.org/abs/2003.08934) as well as the basic MLP network structure.
 
+## Training
+
+Given position maps you can start training.
+In the figure below you see the training curve for a scan with 89 images (from left to right: position input, predicted texture, ground truth).
+![Training](snapshots/train_curve.jpg)
+
+## Inference
+
+Inference is done on a vertex level. You can increase the sample rate via subdivision.
+![Matterport](snapshots/snapshot00_L00.jpg)
+![Matterport](snapshots/snapshot00_L00.jpg)
+
 ## Ackowledgements
 This code is based on the Pix2Pix/CycleGAN framework [(Github repo)](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and the NeuralTexGen project [(Github repo)](https://github.com/JustusThies/NeuralTexGen).
 The positional encoding is based on the implementation of nerf-pytorch [(Github repo)](https://github.com/yenchenlin/nerf-pytorch).
+Data of Matterport3D [(Github repo)](https://niessner.github.io/Matterport/) is used for demonstration.
